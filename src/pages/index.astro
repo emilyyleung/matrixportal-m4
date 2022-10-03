@@ -1,5 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
----
+import DocsLayout from '../layouts/DocsLayout.astro';
 
-<div>Hello World</div>
+const posts = await Astro.glob('./*.md')
+
+console.log(posts)
+---
+<DocsLayout>
+<div>Table of contents</div>
+
+{
+    posts.map((post) => (
+        <div>{post.frontmatter.title}</div>
+    ))
+}
+
+
+</DocsLayout>

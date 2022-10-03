@@ -1,0 +1,8 @@
+---
+const {title} = Astro.props.frontmatter || Astro.props;
+---
+
+<article class="prose prose-slate max-w-3xl mx-auto py-10">
+    <h1 class="text-6xl">{title}</h1>
+    <slot/>
+</article>
