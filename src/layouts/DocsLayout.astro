@@ -1,7 +1,12 @@
-<div class="grid grid-cols-[1fr_2fr] lg:grid-cols-[1fr_3fr] min-h-screen">
-    <div class="bg-slate-200">
-        
-    </div>
+---
+import SidebarNav from '../components/SidebarNav.jsx'
+
+// https://tailwindui.com/components/application-ui/navigation/sidebar-navigation
+---
+
+<div class="grid grid-cols-[minmax(300px,1fr)_2fr] max-w-7xl mx-auto min-h-screen">
+    <SidebarNav client:load></SidebarNav>
+    
     <div class="bg-slate-500">
 
     </div>
