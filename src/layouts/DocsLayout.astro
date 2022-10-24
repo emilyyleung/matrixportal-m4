@@ -1,13 +1,15 @@
 ---
 import SidebarNav from '../components/SidebarNav.jsx'
 
+const pathName = Astro.url.pathname
 // https://tailwindui.com/components/application-ui/navigation/sidebar-navigation
 ---
 
-<div class="grid grid-cols-[minmax(300px,1fr)_2fr] max-w-7xl mx-auto min-h-screen">
-    <SidebarNav client:load></SidebarNav>
+<div class="max-h-screen">
+    <SidebarNav client:load pathName={pathName}>
+        <div class="bg-slate-100">
+            <slot />
+        </div>
+    </SidebarNav>
     
-    <div class="bg-slate-500">
-
-    </div>
 </div>

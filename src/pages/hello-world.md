@@ -1,9 +1,9 @@
 ---
 layout: '../layouts/BlogLayout.astro'
-title: Heyo world
+title: Another one
 ---
 
-# Hello World
+# Testing 123
 
 This is a test
 
