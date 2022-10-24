@@ -5,11 +5,8 @@ const pathName = Astro.url.pathname
 // https://tailwindui.com/components/application-ui/navigation/sidebar-navigation
 ---
 
-<div class="max-h-screen">
+<div class="min-h-screen bg-slate-100">
     <SidebarNav client:load pathName={pathName}>
-        <div class="bg-slate-100">
-            <slot />
-        </div>
+        <slot />
     </SidebarNav>
-    
 </div>
